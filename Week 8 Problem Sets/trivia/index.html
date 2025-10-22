@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>When did world war 2 end?</h3>
+
+                <button class="correct" type="text">September 2, 1945</button>
+                <button class="incorrect" type="text">October 2, 1944</button>
+                <button class="incorrect" type="text">September 12, 1945</button>
+                <button class="incorrect" type="text">September 2, 1946</button>
+
+                <p id="Answer"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>People make me, save me, change me, raise me. What am I?</h3>
+
+                <form>
+                    <input type="text" placeholder="Earth">
+                    <button id="check">Check asnwer</button>
+
+                    <p id="Correct"></p>
+                </form>
+            </div>
+        </div>
+        <script>
+            // check button answers
+            window.addEventListener("", function() {
+                // if Answer is correct
+                let correct = document.querySelector('.correct');
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = "green";
+                    document.querySelector('#Answer').innerHTML = "Correct!";
+                });
+
+                // in Answer is wrong
+                let correct = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrect.length; i++) {
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = "red";
+                        document.querySelector('#Answer').innerHTML = "Incorrect!";
+                    });
+                }
+
+                // check free answer
+                document.querySelector('#Correct').addEventListener('click', function(event) {
+                    event.preventDefault();
+                    let input = document.querySelector('input');
+                    if (input.value.toLowerCase() == 'Money') {
+                        input.style.backgroundColor = 'green';
+                        document.querySelector('#Correct').innerHTML = "Correct!";
+                    } else {
+                        input.style.backgroundColor = 'red';
+                        document.querySelector('#Correct').innerHTML = "Incorrect!";
+                    }
+                });
+
+            });
+        </script>
+    </body>
+
+</html>

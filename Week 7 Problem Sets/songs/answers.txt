@@ -1,0 +1,18 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+Here's more indept data about the person's music listening preferences based on average energy, valence and danceability
+
+ENERGY
+Average energy of music is 0.659
+
+VALENCE
+Average valence of music is 0.484
+
+DANCEABILITY
+Average danceability of the music us 0.716
+
+Conlusion:
+The user's average valence score suggests a balanced mix of happy and sad music, placing them in the Blue mood group—someone who likely uses music to deeply process emotions.
+However, this conclusion may not fully capture their listening habits, as it relies solely on their top 100 songs, which might not reflect their full range of preferences.
+A more accurate representation could come from analyzing their entire yearly streaming history rather than just the most-played tracks.
+Additionally, incorporating factors like listening context (time of day, activity) or mood-based playlists could provide a richer understanding of their musical aura.
